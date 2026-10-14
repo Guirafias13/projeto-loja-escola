@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Detalhes do produto na Loja Impossível.">
+  <title>Loja Impossível | Detalhes do Produto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header shadow-sm">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Loja Impossível</a>
+        <div class="ms-auto">
+          <a class="nav-link d-inline-block me-3 text-dark fw-medium" href="index.html">Produtos</a>
+          <a class="nav-link d-inline-block text-dark fw-medium" href="checkout.html">Finalizar compra</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="container py-5 flex-grow-1">
+    <nav aria-label="breadcrumb" class="mb-4">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Produtos</a></li>
+        <li class="breadcrumb-item active" aria-current="page" id="breadcrumbNome">Detalhes</li>
+      </ol>
+    </nav>
+
+    <div class="row g-5 align-items-start mb-5">
+      <!-- Coluna Esquerda: Ícone e Garantia -->
+      <div class="col-lg-5 text-center">
+        <div class="p-5 bg-white border rounded-4 shadow-sm display-1 product-detail-icon mb-4" id="produtoIcone"
+          aria-hidden="true">
+          📦
+        </div>
+        <div class="card border-0 bg-light p-3 rounded-3 text-start mb-3">
+          <h3 class="h6 fw-bold text-dark mb-2">🔒 Garantia de Entrega Quântica</h3>
+          <p class="small text-secondary mb-0">Asseguramos a integridade dimensional do item desde o multiverso de origem até o seu endereço final.</p>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Informações e Compra -->
+      <div class="col-lg-7">
+        <span class="badge bg-secondary text-uppercase mb-2" id="produtoCategoria">Categoria</span>
+        <h1 class="display-5 fw-bold mb-3 text-dark" id="produtoNome">Nome do Produto</h1>
+        <p class="lead text-secondary mb-4" id="produtoDescricao">Descrição detalhada do produto.</p>
+
+        <div class="p-3 bg-white border rounded-3 shadow-sm mb-4">
+          <span class="display-5 fw-bold text-success" id="produtoPreco">R$ 0,00</span>
+          <span class="d-block text-muted small mt-1">Em até 12x sem juros em cartões autorizados.</span>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="h6 fw-bold text-uppercase text-secondary fs-7 mb-2">Especificações Físicas:</h3>
+          <div id="produtoRegras" class="d-flex flex-wrap gap-2"></div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="row g-3 align-items-end mb-4">
+          <div class="col-sm-4">
+            <label for="quantidade" class="form-label fw-bold">Quantidade</label>
+            <input type="number" id="quantidade" class="form-control form-control-lg text-center fw-bold" value="1"
+              min="1" max="10">
+          </div>
+          <div class="col-sm-8">
+            <button id="btnComprar" class="btn btn-dark btn-lg w-100 py-3 shadow-sm fw-bold">Comprar agora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção Inferior: Cuidados Especiais -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="card border shadow-sm rounded-4">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="h5 fw-bold mb-4">Especificações e Cuidados Especiais</h3>
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="p-3 border rounded-3 bg-light h-100">
+                  <h4 class="h6 fw-bold text-dark">🌌 Origem Dimensional</h4>
+                  <p class="small text-secondary mb-0">Fabricado em laboratórios avançados em realidades paralelas.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="p-3 border rounded-3 bg-light h-100">
+                  <h4 class="h6 fw-bold text-dark">⚠️ Precauções de Uso</h4>
+                  <p class="small text-secondary mb-0">Evite expor o artigo a paradoxos temporais severos.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="p-3 border rounded-3 bg-light h-100">
+                  <h4 class="h6 fw-bold text-dark">📦 Condições de Envio</h4>
+                  <p class="small text-secondary mb-0">Despacho imediato via transportadora interdimensional.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-0 text-white-50">Loja Impossível · Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/produtos.js"></script>
+  <script src="js/produto-detalhe.js"></script>
+</body>
+
+</html>
